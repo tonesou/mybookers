@@ -12,13 +12,21 @@
     </div>
     <div class="col-8">
       <h1>Books</h1>
-      <table class="teble">
+      <table class="table">
         <thead>
           <tr>
-            <td>Title</td>
-            <td>Opinion</td>
+            <th>Title</th>
+            <th>Opinion</th>
           </tr>
         </thead>
+        <tbody>
+          <% @books.each do |book| %>
+            <tr>
+              <td><%= book.title %></td>
+              <td><%= book.body %></td>
+            </tr>
+          <% end %>
+        </tbody>
       </table>
     </div>
   </div>
