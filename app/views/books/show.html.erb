@@ -6,10 +6,9 @@
       <table class="table">
         <thead>
           <tr>
-            <td>
-              <%= @book.title %>
-              <%= @book.body %>
-            </td>
+            <td><%= @book.title %></td>
+            <td><%= @book.body %></td>
+            <td><%= link_to "edit", edit_book_path(@book) %></td>
           </tr>
         </thead>
       </table>
