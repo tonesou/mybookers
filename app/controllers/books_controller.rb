@@ -43,7 +43,7 @@ class BooksController < ApplicationController
   private
 
   def book_params #ストロングパラメータ
-    params.require(:book).permit(:title, :body) #パラメーターのキー
+    params.require(:book).permit(:title, :body, :profile_image) #パラメーターのキー
   end
 
 end
