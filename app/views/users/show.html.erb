@@ -9,6 +9,7 @@
       <table class="table">
         <thead>
           <tr>
+            <th></th>
             <th>Title</th>
             <th>Opinion</th>
           </tr>
@@ -16,7 +17,9 @@
         <% @books.each do |book| %>
         <tbody>
           <tr>
+            <td><%= image_tag @user.get_profile_image, size: '50x50' %></td>
             <td><%= book.title %></td>
+            <td><%= book.body %></td>
           </tr>
         </tbody>
         <% end %>
